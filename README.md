@@ -2,6 +2,8 @@
 
 让 AI Agent 使用 DeepVid 桌面客户端，将视频、音频整理为图文笔记，并检索你的本地知识库。
 
+Give your AI agent the ability to digest videos and audio into illustrated notes and search your local knowledge library with the DeepVid desktop app.
+
 ## 能做什么
 
 - 精读视频、音频链接与本机媒体文件。
@@ -37,14 +39,31 @@ Skill 是操作指南；安装它不会自动安装桌面客户端或注册 MCP 
 - 本技能不授予客户端付费权益，具体能力以客户端实际返回为准。
 - 不要将 MCP 密钥、模型 API Key 或浏览器 Cookie 提交到仓库。
 
-## 文件说明
-
-| 文件 | 内容 |
-| --- | --- |
-| [SKILL.md](SKILL.md) | 技能入口与工作流程 |
-| [agents/openai.yaml](agents/openai.yaml) | Agent 展示信息 |
-| [references/desktop.md](references/desktop.md) | 客户端获取、安装与启动 |
-| [references/mcp.md](references/mcp.md) | MCP 连接与恢复 |
-| [references/digest.md](references/digest.md) | 模型配置、精读与结果读取 |
-
 [官网](https://deepvid.977star.com) · [客户端下载](https://github.com/977star/DeepVid/releases/latest)
+
+---
+
+## English
+
+### What it does
+
+- Digest video/audio links and local media into illustrated notes.
+- Answer questions using existing notes in your knowledge library.
+- Guide desktop installation, model setup, and DeepVid MCP connection when needed.
+- Process a media folder after confirming the scope with you.
+
+### Download and install
+
+Download [DeepVid Skill v0.1.0](https://github.com/977star/DeepVid-Skill/releases/download/v0.1.0/deepvid-skill-v0.1.0.zip), or visit the [latest release](https://github.com/977star/DeepVid-Skill/releases/latest). Extract the ZIP and install the `deepvid-skill` folder in your agent's supported skills location. No Git is required.
+
+Try: “Use $deepvid-skill to digest this video: <video URL>.”
+
+For updates, download the new release, replace the skill files, and reload skills as required by your agent. The skill has its own version, recorded in `VERSION`, independent of the desktop app.
+
+### Requirements and costs
+
+The [DeepVid desktop app](https://deepvid.977star.com) must be running and connected through DeepVid MCP. Installing the skill does not install the app or register an MCP connection automatically; the skill guides you through missing setup steps.
+
+Use an agent that can access the computer running DeepVid. A remote sandbox's localhost is not your computer. New digests require speech recognition and a note-generation model; online providers may charge for usage. Client feature availability depends on your actual permissions. Never commit MCP keys, model API keys, or browser cookies to this repository.
+
+[Website](https://deepvid.977star.com) · [Desktop downloads](https://github.com/977star/DeepVid/releases/latest)
