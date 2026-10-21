@@ -9,6 +9,14 @@
 - 按需引导安装、启动客户端、配置模型与连接 DeepVid MCP。
 - 处理用户选定的媒体目录，先确认范围再执行。
 
+## 下载
+
+当前版本：**v0.1.0**。
+
+直接下载 [DeepVid Skill v0.1.0 ZIP](https://github.com/977star/DeepVid-Skill/releases/download/v0.1.0/deepvid-skill-v0.1.0.zip)，或前往[最新发布页](https://github.com/977star/DeepVid-Skill/releases/latest)。解压后会得到 `deepvid-skill` 文件夹，无需 Git 或下载整个项目。
+
+更新时下载新版本，替换原技能目录中的文件，再按所用 Agent 的要求刷新或重新加载技能。技能版本独立于桌面客户端版本，版本号记录在 `VERSION` 文件中。
+
 ## 安装与使用
 
 将本仓库作为一个名为 `deepvid-skill` 的技能目录，安装到你的 Agent 支持的技能位置。目录中应直接包含 `SKILL.md`、`agents/` 和 `references/`，具体安装方式以所用 Agent 的说明为准。
