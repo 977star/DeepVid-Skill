@@ -1,0 +1,4 @@
+interface:
+  display_name: "DeepVid Skill"
+  short_description: "视频精读与本地知识库检索，按需引导安装、启动客户端和配置 MCP"
+  default_prompt: "使用 $deepvid-skill 帮我精读这个视频；首次使用时引导我配置知影。"
